@@ -24,7 +24,7 @@ jobs:
         server: ftpupload.net
         username: epiz_34330652
         password: ${{ secrets.password }}
-        server-dir : htdocs
+        
         exclude: |
           **/.git*
           **/.git*/**
