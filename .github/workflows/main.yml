@@ -18,17 +18,17 @@ jobs:
         npm install
         npm run build
         
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftpupload.net
-        username: epiz_34330652
-        password: ${{ secrets.password }}
+    # - name: 📂 Sync files
+    #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    #   with:
+    #     server: ftpupload.net
+    #     username: epiz_34330652
+    #     password: ${{ secrets.password }}
         
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/.vs*
-          **/.vscode*
+    #     exclude: |
+    #       **/.git*
+    #       **/.git*/**
+    #       **/node_modules/**
+    #       **/.vs*
+    #       **/.vscode*
 
